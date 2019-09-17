@@ -9,11 +9,20 @@
 /* Begin PBXBuildFile section */
 		B0AB79ED232D647A00EEAEC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AB79EC232D647A00EEAEC3 /* AppDelegate.swift */; };
 		B0AB79EF232D647A00EEAEC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AB79EE232D647A00EEAEC3 /* ViewController.swift */; };
-		B0AB79F2232D647A00EEAEC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0AB79F0232D647A00EEAEC3 /* Main.storyboard */; };
 		B0AB79F4232D647B00EEAEC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0AB79F3232D647B00EEAEC3 /* Assets.xcassets */; };
 		B0AB79F7232D647B00EEAEC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0AB79F5232D647B00EEAEC3 /* LaunchScreen.storyboard */; };
 		B0AB7A02232D647B00EEAEC3 /* WhoIsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AB7A01232D647B00EEAEC3 /* WhoIsTests.swift */; };
 		B0AB7A0D232D647B00EEAEC3 /* WhoIsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AB7A0C232D647B00EEAEC3 /* WhoIsUITests.swift */; };
+		B0AB7A22232D7C7200EEAEC3 /* InformationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AB7A21232D7C7200EEAEC3 /* InformationRouter.swift */; };
+		B0AB7A24232D7C7F00EEAEC3 /* Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AB7A23232D7C7F00EEAEC3 /* Information.swift */; };
+		B0AB7A28232D7C9500EEAEC3 /* InformationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AB7A27232D7C9500EEAEC3 /* InformationPresenter.swift */; };
+		B0AB7A2A232D7CBB00EEAEC3 /* InformationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AB7A29232D7CBB00EEAEC3 /* InformationInteractor.swift */; };
+		B0AB7A2C232D7CD200EEAEC3 /* Information.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0AB7A2B232D7CD200EEAEC3 /* Information.storyboard */; };
+		B0AB7A2E232D7CFB00EEAEC3 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AB7A2D232D7CFB00EEAEC3 /* InformationViewController.swift */; };
+		B0EAD77E233065AD00968CA0 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EAD77D233065AD00968CA0 /* NetworkManager.swift */; };
+		B0EAD780233065D300968CA0 /* ServiceConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EAD77F233065D300968CA0 /* ServiceConstants.swift */; };
+		B0EAD782233066DF00968CA0 /* ServiceInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EAD781233066DF00968CA0 /* ServiceInterfaces.swift */; };
+		B0EAD784233067E000968CA0 /* InformationRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EAD783233067E000968CA0 /* InformationRequestManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +46,6 @@
 		B0AB79E9232D647A00EEAEC3 /* WhoIs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhoIs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0AB79EC232D647A00EEAEC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0AB79EE232D647A00EEAEC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B0AB79F1232D647A00EEAEC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B0AB79F3232D647B00EEAEC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0AB79F6232D647B00EEAEC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0AB79F8232D647B00EEAEC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +55,16 @@
 		B0AB7A08232D647B00EEAEC3 /* WhoIsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhoIsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0AB7A0C232D647B00EEAEC3 /* WhoIsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhoIsUITests.swift; sourceTree = "<group>"; };
 		B0AB7A0E232D647B00EEAEC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0AB7A21232D7C7200EEAEC3 /* InformationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationRouter.swift; sourceTree = "<group>"; };
+		B0AB7A23232D7C7F00EEAEC3 /* Information.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Information.swift; sourceTree = "<group>"; };
+		B0AB7A27232D7C9500EEAEC3 /* InformationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationPresenter.swift; sourceTree = "<group>"; };
+		B0AB7A29232D7CBB00EEAEC3 /* InformationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationInteractor.swift; sourceTree = "<group>"; };
+		B0AB7A2B232D7CD200EEAEC3 /* Information.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Information.storyboard; sourceTree = "<group>"; };
+		B0AB7A2D232D7CFB00EEAEC3 /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
+		B0EAD77D233065AD00968CA0 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		B0EAD77F233065D300968CA0 /* ServiceConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceConstants.swift; sourceTree = "<group>"; };
+		B0EAD781233066DF00968CA0 /* ServiceInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceInterfaces.swift; sourceTree = "<group>"; };
+		B0EAD783233067E000968CA0 /* InformationRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationRequestManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +115,9 @@
 		B0AB79EB232D647A00EEAEC3 /* WhoIs */ = {
 			isa = PBXGroup;
 			children = (
-				B0AB79EC232D647A00EEAEC3 /* AppDelegate.swift */,
-				B0AB79EE232D647A00EEAEC3 /* ViewController.swift */,
-				B0AB79F0232D647A00EEAEC3 /* Main.storyboard */,
-				B0AB79F3232D647B00EEAEC3 /* Assets.xcassets */,
-				B0AB79F5232D647B00EEAEC3 /* LaunchScreen.storyboard */,
+				B0AB7A1A232D79AD00EEAEC3 /* SupportingFiles */,
+				B0EAD77C23305EAB00968CA0 /* Service */,
+				B0AB7A1B232D7ABB00EEAEC3 /* Information */,
 				B0AB79F8232D647B00EEAEC3 /* Info.plist */,
 			);
 			path = WhoIs;
@@ -123,6 +139,81 @@
 				B0AB7A0E232D647B00EEAEC3 /* Info.plist */,
 			);
 			path = WhoIsUITests;
+			sourceTree = "<group>";
+		};
+		B0AB7A1A232D79AD00EEAEC3 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				B0AB79EE232D647A00EEAEC3 /* ViewController.swift */,
+				B0AB79EC232D647A00EEAEC3 /* AppDelegate.swift */,
+				B0AB79F5232D647B00EEAEC3 /* LaunchScreen.storyboard */,
+				B0AB79F3232D647B00EEAEC3 /* Assets.xcassets */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		B0AB7A1B232D7ABB00EEAEC3 /* Information */ = {
+			isa = PBXGroup;
+			children = (
+				B0AB7A20232D7BD900EEAEC3 /* Router */,
+				B0AB7A1F232D7BD100EEAEC3 /* Entity */,
+				B0AB7A1E232D7BC500EEAEC3 /* Presenter */,
+				B0AB7A1D232D7BBF00EEAEC3 /* Interactor */,
+				B0AB7A1C232D7BB400EEAEC3 /* View */,
+			);
+			path = Information;
+			sourceTree = "<group>";
+		};
+		B0AB7A1C232D7BB400EEAEC3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B0AB7A2B232D7CD200EEAEC3 /* Information.storyboard */,
+				B0AB7A2D232D7CFB00EEAEC3 /* InformationViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B0AB7A1D232D7BBF00EEAEC3 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				B0AB7A29232D7CBB00EEAEC3 /* InformationInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		B0AB7A1E232D7BC500EEAEC3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B0AB7A27232D7C9500EEAEC3 /* InformationPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B0AB7A1F232D7BD100EEAEC3 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				B0AB7A23232D7C7F00EEAEC3 /* Information.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		B0AB7A20232D7BD900EEAEC3 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				B0AB7A21232D7C7200EEAEC3 /* InformationRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		B0EAD77C23305EAB00968CA0 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B0EAD77D233065AD00968CA0 /* NetworkManager.swift */,
+				B0EAD77F233065D300968CA0 /* ServiceConstants.swift */,
+				B0EAD781233066DF00968CA0 /* ServiceInterfaces.swift */,
+				B0EAD783233067E000968CA0 /* InformationRequestManager.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +320,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0AB7A2C232D7CD200EEAEC3 /* Information.storyboard in Resources */,
 				B0AB79F7232D647B00EEAEC3 /* LaunchScreen.storyboard in Resources */,
 				B0AB79F4232D647B00EEAEC3 /* Assets.xcassets in Resources */,
-				B0AB79F2232D647A00EEAEC3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +349,15 @@
 			files = (
 				B0AB79EF232D647A00EEAEC3 /* ViewController.swift in Sources */,
 				B0AB79ED232D647A00EEAEC3 /* AppDelegate.swift in Sources */,
+				B0AB7A2E232D7CFB00EEAEC3 /* InformationViewController.swift in Sources */,
+				B0EAD782233066DF00968CA0 /* ServiceInterfaces.swift in Sources */,
+				B0EAD784233067E000968CA0 /* InformationRequestManager.swift in Sources */,
+				B0EAD780233065D300968CA0 /* ServiceConstants.swift in Sources */,
+				B0AB7A28232D7C9500EEAEC3 /* InformationPresenter.swift in Sources */,
+				B0EAD77E233065AD00968CA0 /* NetworkManager.swift in Sources */,
+				B0AB7A24232D7C7F00EEAEC3 /* Information.swift in Sources */,
+				B0AB7A22232D7C7200EEAEC3 /* InformationRouter.swift in Sources */,
+				B0AB7A2A232D7CBB00EEAEC3 /* InformationInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +393,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B0AB79F0232D647A00EEAEC3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B0AB79F1232D647A00EEAEC3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B0AB79F5232D647B00EEAEC3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
